@@ -1,0 +1,263 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DynaPuff', cursive;
+}
+body, html 
+{
+    height: 100%;
+    background: #18191a;
+}
+.menutren
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background: #242526;
+}
+.noidungchinh
+{
+    margin-top: 61px;
+    height: 100%;
+    width: 100%;
+}
+.noidungchinh .trai
+{
+    float: left;
+    width: 20%;
+    height: 100%;
+
+}
+.trai img 
+{
+    position: fixed;
+    left: 0;
+    width: 300px;
+    height: 85%;
+}
+.noidungchinh .giua
+{
+    float: left;
+    width: 47%;
+}
+.noidungchinh .phai
+{
+    float: left;
+    width: 10%;
+}
+.phai img 
+{
+    position: fixed;
+    right: 0;
+    width: 32%;
+
+}
+.motkhoi
+{
+    width: 100%;
+    margin: 17px 2px;
+    border: 1px solid #000;
+}
+.motkhoi .avatar
+{
+    height: 81px;
+    background: #18191a;
+    padding-top: 6px;
+    padding-bottom: 20px;
+
+}
+.motkhoi .cacAnh
+{
+
+}
+.cacAnh img.motanhtren
+{
+    width: 100%;
+    cursor: pointer;
+   
+}
+._3anhduoi img
+{
+    width: 32.33%;
+    
+}
+.cacAnh div._3anhduoi
+{
+    cursor: pointer;
+}
+.atrai 
+{
+    float: left;
+    width: 11%;
+    margin-left: 2%;
+}
+.atrai img 
+{
+    width: 70px;
+    border-radius: 50%;
+}
+.aphai
+{
+    float: left;
+    padding-top: 10px;
+    color: gray;
+    font-size: 13px;
+
+}
+.aphai b 
+{
+    color: whitesmoke;
+    font-size: 15px;
+}
+.ngaythang
+{
+    color: #b8b8b8;
+    margin-top: 3px;
+}
+.popup
+{
+
+}
+.popup .nenden
+{
+    transition: 0.3s;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.hienlen
+{
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.dong 
+{
+    background-size: 501px 169px;
+    color: white;    /*or   filter: invert(1);   */
+    width:  25px;
+    height: 25px;
+    font-size: 28px;  /* icon chỉnh đc font-size còn background:  thì không;*/
+    background-position: -73px -123px;
+    float: right;
+    margin: 17px 19px 0 0;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.dong:hover
+{
+    opacity: 1;
+}
+.thongtinanh
+{
+    position: fixed;
+    width: 69.3%;
+    height: 90%;
+    background: black;
+    z-index: 5;
+    top: 50%; 
+    /*luc nao cung ra giua */
+    left: 50%;   /*50% cua body*/
+    transform: translateX(-50%) translateY(-50%);  /*50% cua .thongtinanh*/
+    transition: 0.3s;
+
+    opacity: 0;
+    visibility: hidden; /*phải thêm visibility vì opacity chỉ làm mờ thôi chữ thưc ra vẫn còn lớp phủ bên trên*/
+}
+.tttrai
+{
+    float: left;
+    width: 70%;
+    height: 100%;
+    background: gray;
+    position: relative;
+
+}
+.ttphai
+{
+    float: left;
+    width: 30%;
+    height: 100%;
+    background: url(images/ttphai.PNG) no-repeat;
+    background-size: contain;
+}
+
+.khoiCacAnh
+{
+    width: 100%;
+    height: 100%;
+}
+.khoiCacAnh ul 
+{
+    width: 100%;
+}
+.khoiCacAnh ul li 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+
+    /*Để căn giữa (chưa bt width, height cụ thể)*/
+    /*Bên trên dùng tranform: translate(-50%, -50%) vì biết đc width, height rồi*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+.khoiCacAnh ul li.active 
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+.khoiCacAnh ul li img 
+{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+b.ntrai , b.nphai 
+{
+    background: url(images/n4Fb5QewROc.png);
+    background-size: 190px 252px;
+    color: white;    /*or   filter: invert(1);   */
+    width: 24px;
+    height: 24px;
+    font-size: 28px;  /* icon chỉnh đc font-size còn background:  thì không;*/
+    background-position: -160px -28px;
+    margin: 17px 19px 0 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-indent: -9999px;
+    cursor: pointer;
+    left: 2%;
+    z-index: 7;
+}
+b.nphai
+{
+    left: 95%;
+    background-position: -126px -62px;
+}
+
+/*Bai 131*/
